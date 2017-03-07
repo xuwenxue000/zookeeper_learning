@@ -23,7 +23,7 @@ public class ConnectionTest {
                 .build()
         ;
 
-        String path="/xuwenxue";
+        String path="/william";
         try {
             curatorFramework.start();
             //创建节点/test/xu  数据xxx
