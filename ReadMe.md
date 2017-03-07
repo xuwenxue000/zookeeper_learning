@@ -21,13 +21,30 @@ zkCli.sh -server ip:port
 
 create [-s] [-e] path data acl
 
-	-s是持久节点
+	-s是顺序节点
 	-e是临时节点
 	默认是持久节点
 	path是节点路径
 	data是节点数据
 	acl是做权限控制的
 	,默认不控制
+
+ls path [watch]
+	
+	查看路径下的子节点
+	
+get path [watch]
+
+	查看节点下的数据
+	
+set path data [version]
+	
+	设置节点下的数据
+
+
+
+java客户端有zkClient和Curator
+
 	
 
 
