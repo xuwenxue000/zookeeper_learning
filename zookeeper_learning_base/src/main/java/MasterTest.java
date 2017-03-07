@@ -9,7 +9,7 @@ import org.apache.zookeeper.CreateMode;
 import org.junit.Test;
 
 /**
- * 节点和子节点监控
+ * 选举
  * Created by william on 2017/3/6.
  */
 public class MasterTest {
@@ -25,7 +25,7 @@ public class MasterTest {
             ;
     String path="/lock";
     /**
-     * 节点数据变化监控就,删除监控不到
+     * 选举,应该也是一个分布式锁,
      */
     @Test
     public void test(){
