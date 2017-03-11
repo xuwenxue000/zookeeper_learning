@@ -11,6 +11,7 @@ import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.WatchedEvent;
 import org.junit.Test;
 
+import java.util.HashMap;
 import java.util.concurrent.CountDownLatch;
 
 /**
@@ -35,6 +36,7 @@ public class WatcherTest {
     @Test
     public void test(){
         try {
+
             curatorFramework.start();
             curatorFramework.create().creatingParentContainersIfNeeded().withMode(CreateMode.EPHEMERAL).forPath(path,"ddd".getBytes());
             final  NodeCache nodeCache = new NodeCache(curatorFramework,path,false);
